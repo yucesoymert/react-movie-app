@@ -1,5 +1,8 @@
 @use './scss/' as *;
 
+// import icon package
+@import 'boxicons';
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *  {
@@ -45,6 +48,11 @@ a {
   }
 }
 
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 button, 
 input {
   outline: 0;
@@ -78,9 +86,9 @@ iframe  {
 }
 
 .section {
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
-.section_header {
+.section__header {
   @include flex(center, space-between)
 }
