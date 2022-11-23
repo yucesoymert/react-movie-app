@@ -2,7 +2,7 @@
 
 .logo {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
 
     @include flex(center, unset);
 
@@ -28,7 +28,7 @@
 
     &.shrink {
         height: header-shrink-height;
-        background-color: $body-bg;
+        background-color: rgba(black, 0.9);
     }
 
     &__wrap {
@@ -50,7 +50,7 @@
 
         li {
             padding: 5px 0;
-            font-weight: 700;
+            font-weight: 400;
             position: relative;
             font-size: 1.5rem;
 
@@ -60,12 +60,12 @@
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 0;
                 transition: width .3s ease;
+                width: 0;
                 height: 2px;
                 background-color: $main-color;
             }
-    
+
             &.active::after,
             &:hover::after {
                 width: 100%;
