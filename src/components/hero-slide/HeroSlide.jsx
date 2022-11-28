@@ -28,18 +28,15 @@ const HeroSlide = () => {
         const getMovies = async () => {
             const params = {page: 1};
             try {
-                const response = await tmdbApi.getMovieList(movieType.popular, params);
+                const response = await tmdbApi.getMoviesList(movieType.popular, params);
                 setMovieItems(response.results.slice(0, 7));
-                console.log(response)
             } catch(e) {
                 console.log('error', e)
             }
         }
         getMovies();
     }, [])
-{/* <img src={apiConfig.originalImage(item.backdrop_path)} alt="movie_image" /> */}
-/*     console.log('movieItems', movieItems[0])
- */
+
 return (
     <div className='hero-slide' >
         <Swiper
@@ -83,7 +80,6 @@ const HeroSlideItem = props => {
         if (videos.results.length > 0) {
             const videoSrc = 'https://www.youtube.com/embed/' + videos.results[0].key;
             modal.querySelector('.modal__content > iframe').setAttribute('src', videoSrc);
-            console.log(videoSrc)
         } else {
             modal.querySelector('.modal__content').innerHTML = 'No trailer at all';
         }
