@@ -90,5 +90,5 @@ iframe  {
 }
 
 .section__header {
-  @include flex(center, space-between)
+  @include flex(center, space-between);
 }
