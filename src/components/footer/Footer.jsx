@@ -19,14 +19,14 @@ const Footer = () => {
         </div> 
         <div className="footer__content__menus">
           <div className="footer__content__menu">
-            <Link to=''>Home</Link>
-            <Link to=''>Contact me</Link>
-            <Link to=''>About me</Link>
+            <Link to='/'>Home</Link>
+            <a href='https://portfolio-proj3ct.vercel.app/#contact' target='_blank' >Contact me</a>
+            <a href='https://portfolio-proj3ct.vercel.app/' target='_blank' >About me</a>
           </div>
           <div className="footer__content__menu">
-            <Link to=''>You must watch</Link>
-            <Link to=''>Recent release</Link>
-            <Link to=''>Top IMDB</Link>
+            <a href='https://www.imdb.com/chart/top/?ref_=nv_mv_250' target='_blank'>You must watch</a>
+            <a href='https://www.fandango.com/movies-in-theaters' target='_blank'>Recent release</a>
+            <a href='https://www.imdb.com/chart/top/?ref_=nv_mv_250' target='_blank'>Top IMDB</a>
           </div>
         </div>
       </div>
