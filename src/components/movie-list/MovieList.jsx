@@ -44,7 +44,7 @@ const MovieList = props => {
   return (
     <div className='movie-list'>
       <Swiper
-        grabCursor={true}
+        grabCursor={false}
         spaceBetween={10}
         slidesPerView={'auto'}
       >
@@ -55,7 +55,7 @@ const MovieList = props => {
             </SwiperSlide>
           ))
         }
-      </Swiper>      
+      </Swiper>
     </div>
   )
 }
