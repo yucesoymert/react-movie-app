@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom'
 import './footer.scss'
 
  // import png
- import footerbg from '../../assets/footer-bg.jpg';
  import logo from '../../assets/meflix.png';
 
 const Footer = () => {
   return (
-    <div className='footer' style={{backgroundImage: `url(${footerbg})`}}>
+    <div className='footer'>
       <div className="footer__content container">
         <div className="footer__content__logo">
           <div className='logo'>
