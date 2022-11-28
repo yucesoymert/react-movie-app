@@ -50,9 +50,10 @@
 
         li {
             padding: 5px 0;
-            font-weight: 400;
+            font-weight: 300;
             position: relative;
             font-size: 1.5rem;
+            text-align: center;
 
             &::after {
                 content: "";
@@ -78,7 +79,7 @@
             left: 0;
             height: 5rem;
             width: 100%;
-            background-color: $body-bg;
+            background-color: #000;
             padding: 0 2rem;
             box-shadow: $box-shadow;
 
