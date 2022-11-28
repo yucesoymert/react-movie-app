@@ -36,11 +36,16 @@ const tmdbApi = {
     },
     search: (cate, params) => {
         const url = "search/" + category[cate];
-        return axiosClient.get(url, params);
+        return axiosClient.get(url, {
+            params,
+        });
     },
     detail: (cate, id, params) => {
         const url = category[cate] + "/" + id;
-        return axiosClient.get(url, params);
+        return axiosClient.get(url, {
+            params,
+        });
+        console.log(url);
     },
     credits: (cate, id) => {
         const url = category[cate] + "/" + id + "/credits";
